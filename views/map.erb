@@ -2,8 +2,22 @@
 <html>
   <head>
     <title> WORLD MAP </title>
+    <center><img id="Map" src="./public/images/worldMap.png" alt="WORLD MAP" style="width:1920px;height:1080px;"></center>
   </head>
   <body>
+    
+    <% if @showEarthquakePin=true %>
+<!--     earthquake pins appear -->
+    
+    
+    <% end %>
+    
+    <% if @showTsunamiPin=true %>
+<!--     earthquake pins appear -->
+    
+    
+    <% end %>
+
 
 
 <form action="./map" method="post">
