@@ -12,3 +12,8 @@
     background-repeat: no-repeat;
     background-position: center top
 }
+
+.dropPin {
+  height: 5%;
+  width: 5%;
+}
