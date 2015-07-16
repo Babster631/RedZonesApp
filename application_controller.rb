@@ -15,5 +15,9 @@ class ApplicationController < Sinatra::Base
     @disaster = "Peru Earthquake"
     erb :info
   end
+  
+  get '/charities' do
+    erb :charities
+  end
 
 end
