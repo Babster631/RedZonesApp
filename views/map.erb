@@ -2,13 +2,13 @@
 <html>
   <head>
     <title> WORLD MAP </title>
-    <center><img id="Map" src="images/worldMap.png" alt="WORLD MAP" style="width:1500px;height:844px;"></center>
+<!--     <center><img id="Map" src="images/worldMap.png" alt="WORLD MAP" style="width:1920px;height:1080px;"></center>     -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-    
+  <body class = "map">    
     <% if @showEarthquakePin==true %>
 <!--     earthquake pins appear -->
-        <center><a href="./info"><img src="images/DropPinWShadow.png" alt="EQPIN" width="260" height="410" border="0"></a></center>
+        <center><a href="./info"><img class = "dropPin" src="images/DropPinWShadow.png" alt="EQPIN" border="0"></a></center>
     
     <% end %>
     
