@@ -3,10 +3,11 @@ Bundler.require
 
 class ApplicationController < Sinatra::Base
 
+#-------------------------------------------------------#
   get '/' do
     erb :index
   end
-  
+#-------------------------------------------------------#
   post '/map' do
     @disasterType = params[:disasterType]
     if params[:earthquake]==true
@@ -16,7 +17,7 @@ class ApplicationController < Sinatra::Base
     end
     erb :map
   end
-  
+#-------------------------------------------------------#
   get '/info' do
     @disaster = "Ghorka Earthquake"
     @location = "Nepal"
@@ -26,9 +27,8 @@ class ApplicationController < Sinatra::Base
     @mercalliIntensity = "IX (Violent)"
     erb :info
   end
-  
+#-------------------------------------------------------#  
   get '/charities' do
     erb :charities
   end
-
 end
