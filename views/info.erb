@@ -4,25 +4,25 @@
   <head><title> Information on the <%=@disaster%> </title></head>
   
   <body> 
-    <h1> <%=@disaster%> </h1>
+    <h1><font color="red"> <%=@disaster%> </font> </h1>
     <p>
-    Location: <%=@location%>
+      <u><b> Location</b></u>: <%=@location%>
       <br>
-    Date: <%=@date%> at <%=@time%>
+      <u><b> Date</b></u>: <%=@date%> at <%=@time%>
       <br>
-    Magnitude: <%=@magnitude%>
+      <u><b>Magnitude</b></u>: <%=@magnitude%>
       <br>
-    Mercalli Intensity: <%=@mercalliIntensity%>
+      <u><b>Mercalli Intensity</b></u>: <%=@mercalliIntensity%>
     </p>
     <p>
-    Related News: 
+      <u><b> Related News</b></u>: 
       <br>
     -Earthquake triggered avalanche on Mt. Everest (19 killed,120 missing)
       <br>
     -Earthquake triggered avalanche in Langtang valley (250 people missing)
     </p>
     
-      <h2> Charities </h2>
+    <h2> <u>Charities</u> </h2>
     
    <a href=https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.9274575/k.FD90/Nepal_Earthquake_Childrens_Relief_Fund/apps/ka/sd/donor.asp target="_blank"> Save The Children </a> <%=@charity_info%>
     <br>
