@@ -7,16 +7,18 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  get '/map' do
+  post '/map' do
+    @disasterType = params[:disasterType]
     erb :map
   end
   
   get '/info' do
-    @disaster = "Peru Earthquake"
-    @location = ""
+    @disaster = "Ghorka Earthquake"
+    @location = "Nepal"
     @date = "April 25"
     @time = "11:56 AM"
     @magnitude = "7.8"
+    @mercalliIntensity = "IX (Violent)"
     erb :info
   end
   
