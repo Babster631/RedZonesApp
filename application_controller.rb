@@ -13,6 +13,10 @@ class ApplicationController < Sinatra::Base
   
   get '/info' do
     @disaster = "Peru Earthquake"
+    @location = ""
+    @date = "April 25"
+    @time = "11:56 AM"
+    @magnitude = "7.8"
     erb :info
   end
   
