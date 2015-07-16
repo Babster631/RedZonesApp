@@ -1,0 +1,14 @@
+.map {
+    background-color: #6AAFEF;
+    background-image: url("../images/worldMap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+/*     background-position: 50% 50%; */
+}
+
+.home {
+    background-color: #3C3C3C ;
+    background-image: url("../images/LogoOnEarthWBG.png");
+    background-repeat: no-repeat;
+    background-position: center top
+}
