@@ -27,8 +27,4 @@ class ApplicationController < Sinatra::Base
     @mercalliIntensity = "IX (Violent)"
     erb :info
   end
-#-------------------------------------------------------#  
-  get '/charities' do
-    erb :charities
-  end
 end
