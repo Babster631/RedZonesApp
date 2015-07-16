@@ -2,29 +2,20 @@
 <html>
   <head>
     <title> WORLD MAP </title>
-    <center><img id="Map" src="./public/images/worldMap.png" alt="WORLD MAP" style="width:1920px;height:1080px;"></center>
+    <center><img id="Map" src="images/worldMap.png" alt="WORLD MAP" style="width:1500px;height:844px;"></center>
   </head>
   <body>
     
-    <% if @showEarthquakePin=true %>
+    <% if @showEarthquakePin==true %>
 <!--     earthquake pins appear -->
-    
+        <center><a href="./info"><img src="images/DropPinWShadow.png" alt="EQPIN" width="260" height="410" border="0"></a></center>
     
     <% end %>
     
-    <% if @showTsunamiPin=true %>
-<!--     earthquake pins appear -->
+    <% if @showTsunamiPin==true %>
+<!--     tsunami pins appear -->
     
     
     <% end %>
-
-
-
-<form action="./map" method="post">
-  <input type="checkbox" name="disasterType" value="Earthquake"> Earthquake<br>
-  <input type="checkbox" name="disasterType" value="Tsunami" > Tsunami<br>
-  <input type="submit" value="Submit">
-</form>
-    
   </body>
 </html>

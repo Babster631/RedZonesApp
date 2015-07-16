@@ -10,9 +10,9 @@ class ApplicationController < Sinatra::Base
 #-------------------------------------------------------#
   post '/map' do
     @disasterType = params[:disasterType]
-    if params[:earthquake]==true
+    if params[:earthquake]=="true"
       @showEarthquakePin=true
-    elsif params[:tsunami]==true
+    elsif params[:tsunami]=="true"
       @showTsunamiPin=true
     end
     erb :map
