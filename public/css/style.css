@@ -13,7 +13,92 @@
     background-position: center top
 }
 
+#EQLabel {
+  width: 12%;
+  height: 12%;
+  position: relative;
+  left:650px;
+  top: 650px;
+}
+
+#TSLabel {
+  width: 12%;
+  height: 12%;
+  position: relative;
+  left:516px;
+  top: 690px;
+}
+
+#SubButton { 
+    position: relative;
+  left: 750px;
+  top: 650px;
+}
+
+input[type="checkbox"]{
+cursor: pointer;
+-webkit-appearance: none;
+appearance: none;
+background: #34495E;
+border-radius: 1px;
+box-sizing: border-box;
+position: relative;
+box-sizing: content-box ;
+width: 30px;
+height: 30px;
+border-width: 0;
+transition: all .3s linear;
+left: 830px;
+top:606px;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #01B738;
+}
+
+input[type="checkbox"]:focus{
+  outline: 0 none;
+  box-shadow: none;
+}
+
+
+
 .dropPin {
   height: 5%;
   width: 5%;
+  position: relative;
+  left: 975px;
+  top: 200px;
+}
+
+/* FOR THE INFO PAGE */
+h1{
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+}
+
+h2{
+  position: relative;
+  left: 250px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+p{
+  position: relative;
+  left: 250px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+.infoBody {
+  
+}
+
+.charityLink {
+  position: relative;
+  left: 250px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }

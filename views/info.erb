@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <title> Information on the <%=@disaster%> </title>
+  </head>
   
-  <head><title> Information on the <%=@disaster%> </title></head>
-  
-  <body> 
-    <h1><font color="red"> <%=@disaster%> </font> </h1>
+  <body class = "infoBody"> 
+    <center><h1><font color="#F5A623"> <%=@disaster%> </font> </h1></center>
     <p>
-      <u><b> Location</b></u>: <%=@location%>
+      <u><b> LOCATION</b></u>: <%=@location%>
       <br>
-      <u><b> Date</b></u>: <%=@date%> at <%=@time%>
+      <u><b> DATE</b></u>: <%=@date%> at <%=@time%>
       <br>
-      <u><b>Magnitude</b></u>: <%=@magnitude%>
+      <u><b>MAGNITUDE</b></u>: <%=@magnitude%>
       <br>
-      <u><b>Mercalli Intensity</b></u>: <%=@mercalliIntensity%>
+      <u><b>MERCALLI INTENSITY</b></u>: <%=@mercalliIntensity%>
     </p>
     <p>
-      <u><b> Related News</b></u>: 
+      <u><b> RELATED NEWS</b></u>: 
       <br>
-    -Earthquake triggered avalanche on Mt. Everest (19 killed,120 missing)
+    - Earthquake triggered avalanche on Mt. Everest (19 killed, 120 missing)
       <br>
-    -Earthquake triggered avalanche in Langtang valley (250 people missing)
+    - Earthquake triggered avalanche in Langtang valley (250 people missing)
     </p>
     
-    <h2> <u>Charities</u> </h2>
+    <h2> <u>HELP</u> </h2>
     
-   <a href=https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.9274575/k.FD90/Nepal_Earthquake_Childrens_Relief_Fund/apps/ka/sd/donor.asp target="_blank"> Save The Children </a> <%=@charity_info%>
+   <a class = "charityLink" href=https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.9274575/k.FD90/Nepal_Earthquake_Childrens_Relief_Fund/apps/ka/sd/donor.asp target="_blank"> Save The Children </a> <%=@charity_info%>
     <br>
     <br>
-    <a href="https://engage.rescue.org/donate/nepal-earthquake?ms=gs_nepl_quke_dona_ES_150505&gclid=CPmq2sb638YCFUWPHwodP6sJUg" target= "_blank"> International Rescue Committee</a> <%="distributes needed supplies to homes"%>
+    <a class = "charityLink" href="https://engage.rescue.org/donate/nepal-earthquake?ms=gs_nepl_quke_dona_ES_150505&gclid=CPmq2sb638YCFUWPHwodP6sJUg" target= "_blank"> International Rescue Committee</a> <%="distributes needed supplies to homes"%>
     <br>
     <br>
-    <a href="https://www.unicefusa.org/donate/nepal-earthquake-help-children-now/24226?ms=sem_dig_2015_misc_20150425_google&initialms=sem_dig_2015_misc_20150425_google&gclid=COGs0ez538YCFdCRHwodG_8M-g" target="_blank"> unicef </a> <%="works with the children displaced"%>
+    <a class = "charityLink" href="https://www.unicefusa.org/donate/nepal-earthquake-help-children-now/24226?ms=sem_dig_2015_misc_20150425_google&initialms=sem_dig_2015_misc_20150425_google&gclid=COGs0ez538YCFdCRHwodG_8M-g" target="_blank"> unicef </a> <%="works with the children displaced"%>
     <br>
     <br>
-    <a href= "https://nepal.charity.org/" target="_blank">Even more charities</a>
+    <a class = "charityLink" href= "https://nepal.charity.org/" target="_blank">Even more charities</a>
     <br>
     <br>
     
-    <a href="./"><button>Home</button></a>    
+    <center><a href="./"><button>Home</button></a></center>   
   </body>
 </html>
