@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <title> Information on the <%=@disaster%> </title>
+  </head>
+  
+  <body class = "infoBody"> 
+    <center><h1><font color="#F5A623"> <%=@disaster%> </font> </h1></center>
+    <p>
+      <u><b> LOCATION</b></u>: <%=@location%>
+      <br>
+      <u><b> DATE</b></u>: <%=@date%> at <%=@time%>
+      <br>
+      <u><b>MAGNITUDE</b></u>: <%=@magnitude%>
+      <br>
+      <u><b>MERCALLI INTENSITY</b></u>: <%=@mercalliIntensity%>
+    </p>
+    <p>
+      <u><b> RELATED NEWS</b></u>: 
+      <br>
+    - Earthquake triggered avalanche on Mt. Everest (19 killed, 120 missing)
+      <br>
+    - Earthquake triggered avalanche in Langtang valley (250 people missing)
+    </p>
+    
+    <h2> <u>HELP</u> </h2>
+    
+   <a class = "charityLink" href=https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.9274575/k.FD90/Nepal_Earthquake_Childrens_Relief_Fund/apps/ka/sd/donor.asp target="_blank"> Save The Children </a> <%=@charity_info%>
+    <br>
+    <br>
+    <a class = "charityLink" href="https://engage.rescue.org/donate/nepal-earthquake?ms=gs_nepl_quke_dona_ES_150505&gclid=CPmq2sb638YCFUWPHwodP6sJUg" target= "_blank"> International Rescue Committee</a> <%="distributes needed supplies to homes"%>
+    <br>
+    <br>
+    <a class = "charityLink" href="https://www.unicefusa.org/donate/nepal-earthquake-help-children-now/24226?ms=sem_dig_2015_misc_20150425_google&initialms=sem_dig_2015_misc_20150425_google&gclid=COGs0ez538YCFdCRHwodG_8M-g" target="_blank"> UNICEF </a> <%="works with the children displaced"%>
+    <br>
+    <br>
+    <a class = "charityLink" href= "https://nepal.charity.org/" target="_blank">Other charities</a>
+    <br>
+    <br>
+    
+    <center><a href="./"><button>Home</button></a></center>   
+  </body>
+</html>
