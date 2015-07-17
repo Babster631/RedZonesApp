@@ -20,10 +20,10 @@ class ApplicationController < Sinatra::Base
 #-------------------------------------------------------#
 
   get '/infoEq_4-25-15' do
-    erb :infoEq_4-25-15
+    erb :infoEq_4_25_15
   end
   
   get '/infoTs_3-11-11' do
-    erb :infoTs_3-11-11
+    erb :infoTs_3_11_11
   end
 end
