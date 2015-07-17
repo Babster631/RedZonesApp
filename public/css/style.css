@@ -1,10 +1,3 @@
-.map {
-    background-color: #6AAFEF;
-    background-image: url("../images/worldMap.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-/*     background-position: 50% 50%; */
-}
 
 .home {
     background-color: #3C3C3C;
@@ -13,7 +6,6 @@
     background-image: url("../images/LogoOnEarthWBG.png");
     background-repeat: no-repeat;
     background-position: center top;
-    
 }
 
 #form {
@@ -22,26 +14,22 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 500px;
-
-  
 }
 
 #EQLabel {
   width: 70%;
   height: 70%;
-/*   position: relative; */
-
 }
 
 #TSLabel {
   width: 70%;
   height: 70%;
-/*   position: relative; */
-
 }
 
 #SubButton { 
-margin-right: 20px;
+  width:90%;
+  height:90%;
+  margin-right: 200px;
   margin-top: 30px;
 }
 
@@ -52,7 +40,6 @@ appearance: none;
 background: #34495E;
 border-radius: 1px;
 box-sizing: border-box;
-/* position: relative; */
 box-sizing: content-box ;
 width: 30px;
 height: 30px;
@@ -71,15 +58,33 @@ input[type="checkbox"]:focus{
   box-shadow: none;
 }
 
-
+/* FOR THE MAP PAGE */
+.map {
+    background-color: #6AAFEF;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/worldMap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .dropPin {
   height: 5%;
   width: 5%;
-  position: relative;
-  left: 975px;
-  top: 200px;
+  margin: 25% auto 0 auto;
+/*   margin-left: 500px;
+  margin-top: 500px; */
+  
 }
+
+/* #pinDiv {
+    width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 500px;
+  
+} */
 
 /* FOR THE INFO PAGE */
 h1{

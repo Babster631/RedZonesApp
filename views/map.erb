@@ -4,21 +4,15 @@
     <a href="./"><button>Home</button></a>    
 
     <title> WORLD MAP </title>
-<!--     <center><img id="Map" src="images/worldMap.png" alt="WORLD MAP" style="width:1920px;height:1080px;"></center>     -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class = "map">    
+    <div id = "pinDiv">
     <% if @showEarthquakePin==true %>
-<!--     earthquake pins appear -->
-    <a href="./infoEq_4-25-15"><img class = "dropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a>
-    
-    <% end %>
-    
-    <% if @showTsunamiPin==true %>
-<!--     tsunami pins appear -->
+    <a href="./infoEq_4-25-15"><img class = "dropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a>    
+    <% elsif @showTsunamiPin==true %>
     <a href="./infoTs_3-11-11"><img class = "dropPin" src="images/EQHighlightedPin.png" alt="TSPIN" border="0"></a>
-    
-    
     <% end %>
+    </div>
   </body>
 </html>
