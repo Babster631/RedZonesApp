@@ -12,7 +12,8 @@ class ApplicationController < Sinatra::Base
     @disasterType = params[:disasterType]
     if params[:earthquake]=="true"
       @showEarthquakePin=true
-    elsif params[:tsunami]=="true"
+    end
+    if params[:tsunami]=="true"
       @showTsunamiPin=true
     end
     erb :map

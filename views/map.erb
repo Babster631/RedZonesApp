@@ -6,12 +6,20 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class = "map">    
-    <a href="./"><img id = "homeButton" src="images/homeButtonV2.png" alt="HOME" border="0"></a>    
-
-    <% if @showEarthquakePin==true %>
-    <a href="./infoEq_4-25-15"><img class = "eqDropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a>    
-    <% elsif @showTsunamiPin==true %>
-    <a href="./infoTs_3-11-11"><img class = "tsDropPin" src="images/EQHighlightedPin.png" alt="TSPIN" border="0"></a>
-    <% end %>
+    <a href="./"><img id = "homeButton" src="images/homeButtonV2.png" alt="HOME" border="0"></a>
+    
+    
+     <% if @showEarthquakePin==true && @showTsunamiPin==true %>
+        <a href="./infoEq_4-25-15"><img class = "eqDropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a> 
+        <a href="./infoTs_3-11-11"><img class = "tsDropPinWEQ" src="images/TSHighlightedPin.png" alt="TSPIN" border="0"></a>
+    <%else%>
+        <% if @showEarthquakePin==true %>
+        <a href="./infoEq_4-25-15"><img class = "eqDropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a> 
+        <% end %>
+        <% if @showTsunamiPin==true %>
+        <a href="./infoTs_3-11-11"><img class = "tsDropPin" src="images/TSHighlightedPin.png" alt="TSPIN" border="0"></a>
+        <% end %>    
+    <%end%>
+    
   </body>
 </html>
