@@ -7,32 +7,42 @@
 }
 
 .home {
-    background-color: #3C3C3C ;
+    background-color: #3C3C3C;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/LogoOnEarthWBG.png");
     background-repeat: no-repeat;
-    background-position: center top
+    background-position: center top;
+    
+}
+
+#form {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 500px;
+
+  
 }
 
 #EQLabel {
-  width: 12%;
-  height: 12%;
-  position: relative;
-  left:650px;
-  top: 650px;
+  width: 70%;
+  height: 70%;
+/*   position: relative; */
+
 }
 
 #TSLabel {
-  width: 12%;
-  height: 12%;
-  position: relative;
-  left:516px;
-  top: 690px;
+  width: 70%;
+  height: 70%;
+/*   position: relative; */
+
 }
 
 #SubButton { 
-    position: relative;
-  left: 750px;
-  top: 650px;
+margin-right: 20px;
+  margin-top: 30px;
 }
 
 input[type="checkbox"]{
@@ -42,14 +52,14 @@ appearance: none;
 background: #34495E;
 border-radius: 1px;
 box-sizing: border-box;
-position: relative;
+/* position: relative; */
 box-sizing: content-box ;
 width: 30px;
 height: 30px;
 border-width: 0;
 transition: all .3s linear;
-left: 830px;
-top:606px;
+left: 60%;
+top:60%;
 }
 
 input[type="checkbox"]:checked{

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> DROP PIN </title>
+    <title>Drop Pin - Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
-  <body class = "home">
-    <img id="EQLabel" src="images/EQLabel.png" alt="EARTHQUAKE">
-    <img id="TSLabel" src="images/TSLabel.png" alt="TSUNAMI">
-    
+  <body class = "home"> 
     <br>
+    <div id = "form">
 <form action="./map" method="post">
-  <input type="checkbox" name="earthquake" value="true"><br>
-  <input type="checkbox" name="tsunami" value="true" ><br>
-  <input id = "SubButton" type="submit" value="Submit">
+  <img id="EQLabel" src="images/EQLabel.png" alt="EARTHQUAKE"><input type="checkbox" name="earthquake" value="true"><br>
+  <img id="TSLabel" src="images/TSLabel.png" alt="TSUNAMI"><input type="checkbox" name="tsunami" value="true"><br>
+  <center><input id = "SubButton" type="submit" value="Submit"></center>
 </form>
+    </div>
   </body>
 </html>
