@@ -19,14 +19,11 @@ class ApplicationController < Sinatra::Base
   end
 #-------------------------------------------------------#
 
-  get '/info' do
-    @disaster = "Ghorka Earthquake"
-    @location = "Nepal"
-    @date = "April 25"
-    @time = "11:56 AM"
-    @magnitude = "7.8"
-    @mercalliIntensity = "IX (Violent)"
-    @charity_info = "supplies food for the villages"
-    erb :info
+  get '/infoEq_4-25-15' do
+    erb :infoEq_4-25-15
+  end
+  
+  get '/infoTs' do
+    erb :infoTs_3-11-11
   end
 end
