@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <a href="./"><button>Home</button></a>    
 
     <title> WORLD MAP </title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class = "map">    
-    <div id = "pinDiv">
+<!--     <div id = "pinDiv"> -->
+    <a href="./"><img id = "homeButton" src="images/homeButtonV2.png" alt="HOME" border="0"></a>    
+
     <% if @showEarthquakePin==true %>
     <a href="./infoEq_4-25-15"><img class = "dropPin" src="images/EQHighlightedPin.png" alt="EQPIN" border="0"></a>    
     <% elsif @showTsunamiPin==true %>
     <a href="./infoTs_3-11-11"><img class = "dropPin" src="images/EQHighlightedPin.png" alt="TSPIN" border="0"></a>
     <% end %>
-    </div>
+<!--     </div> -->
   </body>
 </html>
